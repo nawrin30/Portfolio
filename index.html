@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nawrin Tarannum | Developer Portfolio</title>
+
+    
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="smoke-canvas" aria-hidden="true"></canvas>
+
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    
+
+    <div id="scroll-progress"></div>
+
+
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Nawrin</span> Tarannum
+            </a>
+
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <button id="theme-toggle"
+                    class="theme-toggle-btn"
+                    aria-label="Switch to light mode"
+                    title="Switch theme">
+                    <i class="fa-solid fa-sun" id="theme-icon" aria-hidden="true"></i>
+                    <span id="theme-label">Light mode</span>
+                </button>
+
+
+                <div class="hamburger">
+
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section id="home" class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="badge">
+                        Welcome to my portfolio
+                    </span>
+
+
+                    <h1>
+                        Hi, I'm
+                        <span class="highlight">
+                            Nawrin Tarannum
+                        </span>
+                    </h1>
+
+
+                    <h2 class="typing-text">
+                        I am a
+                        <span id="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </h2>
+
+
+                    <p class="hero-location">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Ashulia, Dhaka, Bangladesh
+
+                    </p>
+
+
+                    <p class="hero-description">
+
+                        I’m a passionate Software Engineering student dedicated to transforming ideas into impactful digital solutions. With a strong foundation in web development and software engineering, I focus on creating modern, responsive, scalable, and user-centered applications. I’m driven by problem-solving, continuous learning, and the opportunity to turn innovative ideas into meaningful real-world experiences.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#contact"
+                            class="btn btn-primary">
+
+                            Hire Me
+
+                        </a>
+
+
+                        <a href="#projects"
+                            class="btn btn-outline">
+
+                            View Projects
+
+                        </a>
+
+
+                        <a href="./Images/Resume_Nawrin_Tarannum.pdf"
+                            download
+                            class="btn btn-secondary">
+
+                            <i class="fa-solid fa-download"></i>
+
+                            Download Resume
+
+                        </a>
+
+                    </div>
+
+
+              
+
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/nawrin-tarannum"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a href="https://github.com/nawrin30"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+
+                        <a href="https://www.facebook.com/share/19nMGYV6dV/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tarannumnawrin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="mailto:nawrintarannum30@gmail.com"
+                            aria-label="Email">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                
+
+                <div class="hero-image">
+
+                    <div class="profile-img-container">
+
+                        <img src="./Images/nawrin.jpg"
+                            alt="Nawrin Tarannum Profile Photo"
+                            class="profile-img"
+                            onerror="this.onerror=null; this.src='nawrin.jpg';">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="about" class="about section-padding">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+
+                    <p>
+                        Get to know me better
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    
+
+                    <div class="about-text scroll-reveal">
+
+                        <h3>
+                            Personal Introduction
+                        </h3>
+
+                        <p>
+I am a Software Engineering student at Daffodil International University with a strong passion for Web Development and Software Engineering. I specialize in building modern, responsive, and user-centric web applications, with a focus on clean design, usability, and efficient problem-solving. I continuously strengthen my technical expertise through hands-on projects, practical experience, and continuous learning.
+                            
+                        </p>
+
+
+                        <h3>
+                            Career Goal
+                        </h3>
+
+                        <p>
+
+                           My career goal is to establish myself as a skilled<strong> Software Engineer </strong>, <strong> Full Stack Developer</strong> and <strong>Web Developer</strong> by developing strong expertise in modern web technologies and software development practices. I aspire to design and build scalable, secure, accessible, and high-quality applications that solve real-world problems, while continuously adapting to emerging technologies and industry best practices.
+
+                        </p>
+
+
+                        <div class="interests-container">
+
+                            <h3>
+                                Core Interests
+                            </h3>
+
+
+                            <div class="tags">
+
+                                <span class="tag">
+                                    Web Development
+                                </span>
+
+                                <span class="tag">
+                                    Frontend Development
+                                </span>
+
+                                <span class="tag">
+                                    Software Engineering
+                                </span>
+
+                                <span class="tag">
+                                    UI/UX Design
+                                </span>
+
+                                <span class="tag">
+                                    Problem Solving
+                                </span>
+
+                                <span class="tag">
+                                    Learning New Technologies
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+                    <div class="about-cards scroll-reveal">
+
+
+                        
+
+                        <div class="info-card">
+
+                            <i class="fa-solid fa-graduation-cap card-icon"></i>
+
+                            <h4>
+                                Education Summary
+                            </h4>
+
+                            <ul>
+
+                                <li>
+                                    <strong>
+                                        B.Sc. in Software Engineering
+                                    </strong>
+                                    (7th Semester Running)
+                                </li>
+
+                                <li>
+                                    Daffodil International University —
+                                    CGPA: 3.34
+                                </li>
+
+                                <li>
+                                    <strong>HSC:</strong>
+                                    Bangladesh Noubahini College, Chittagong
+                                </li>
+
+                                <li>
+                                    <strong>SSC:</strong>
+                                    Bangladesh Noubahini School & College,
+                                    Chittagong
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                        
+
+                        <div class="info-card">
+
+                            <i class="fa-solid fa-user-gear card-icon"></i>
+
+                            <h4>
+                                Soft Skills
+                            </h4>
+
+
+                            <div class="tags">
+
+                                <span class="tag-light">
+                                    Communication
+                                </span>
+
+                                <span class="tag-light">
+                                    Teamwork
+                                </span>
+
+                                <span class="tag-light">
+                                    Problem Solving
+                                </span>
+
+                                <span class="tag-light">
+                                    Time Management
+                                </span>
+
+                                <span class="tag-light">
+                                    Adaptability
+                                </span>
+
+                                <span class="tag-light">
+                                    Quick Learning
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="skills" class="skills section-padding">
+
+            <div class="container">
+
+
+                <div class="section-title">
+
+                    <h2>
+                        My <span>Skills</span>
+                    </h2>
+
+                    <p>
+                        Technologies, tools & software capabilities
+                    </p>
+
+                </div>
+
+
+
+              
+
+                <div class="skills-summary">
+
+                    <div class="summary-card">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h3>23+</h3>
+
+                        <p>
+                            Technologies
+                        </p>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <h3>7</h3>
+
+                        <p>
+                            Skill Categories
+                        </p>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <h3>SWE</h3>
+
+                        <p>
+                            Software Engineering
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                
+
+                <div class="skills-grid">
+
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Programming Languages
+                                </h3>
+
+                                <p>
+                                    Core programming technologies
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-js"></i>
+                                JavaScript
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-code"></i>
+                                TypeScript
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-python"></i>
+                                Python
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-c"></i>
+                                C
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-code"></i>
+                                C++
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-java"></i>
+                                Java
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Frontend Development
+                                </h3>
+
+                                <p>
+                                    Modern web interface technologies
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-html5"></i>
+                                HTML5
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                CSS3
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-js"></i>
+                                JavaScript
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-code"></i>
+                                TypeScript
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-react"></i>
+                                React
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-wind"></i>
+                                Tailwind CSS
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-file-code"></i>
+                                TSX
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Backend Development
+                                </h3>
+
+                                <p>
+                                    Server-side & application development
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-node-js"></i>
+                                Node.js
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-server"></i>
+                                Express.js
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-desktop"></i>
+                                Electron
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-database"></i>
+                                Prisma ORM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Database & Data
+                                </h3>
+
+                                <p>
+                                    Database technologies & ORM
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-leaf"></i>
+                                MongoDB
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-database"></i>
+                                MySQL
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-database"></i>
+                                PostgreSQL
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-table"></i>
+                                SQL
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                Prisma ORM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    AI & Machine Learning
+                                </h3>
+
+                                <p>
+                                    Artificial intelligence technologies
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-python"></i>
+                                Python
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-brain"></i>
+                                TensorFlow
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Tools & Development Environment
+                                </h3>
+
+                                <p>
+                                    Development & collaboration tools
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-git-alt"></i>
+                                Git
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-solid fa-code"></i>
+                                VS Code
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-java"></i>
+                                IntelliJ IDEA
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+                    <div class="skills-category scroll-reveal">
+
+                        <div class="skill-category-header">
+
+                            <div class="category-icon">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Operating Systems
+                                </h3>
+
+                                <p>
+                                    Development environments
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-linux"></i>
+                                Linux
+                            </span>
+
+                            <span class="skill-tag">
+                                <i class="fa-brands fa-ubuntu"></i>
+                                Ubuntu
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="projects" class="projects section-padding">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                    <p>
+                        A selection of my development projects
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="0">
+                        <div class="project-img-container"><img src="./Images/taskflow.png" alt="TaskFlow - Smart Task & Project Management System screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>TaskFlow — Smart Task & Project Management System</h3>
+                            <p class="project__description">A web-based task and project management platform to organize tasks, manage priorities, and track progress.</p>
+                            <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links"><a href="https://nawrin30.github.io/TaskFlow---Smart-Task-Project-Management-System/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/nawrin30/TaskFlow---Smart-Task-Project-Management-System" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="1">
+                        <div class="project-img-container"><img src="./Images/Quran-Al-Karim.png" alt="Quran Al-Kareem screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>Quran Al-Kareem</h3>
+                            <p class="project__description">An Islamic companion web app for exploring Quran content with a clean, accessible interface.</p>
+                            <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links"><a href="https://quran-al-kareem-1.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/nawrin30/Quran-Al-Kareem" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="2">
+                        <div class="project-img-container"><img src="Images/codesage.png" alt="CodeSage screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>CodeSage</h3>
+                            <p class="project__description">An AI-focused coding project built to support code understanding and developer productivity.</p>
+                            <div class="tech-stack"><span>Python</span><span>AI</span><span>Web Development</span></div>
+                            <div class="project-links"><a href="https://github.com/nawrin30/codesage" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="3">
+                        <div class="project-img-container"><img src="Images/skycast.png" alt="SkyCast - Weather Intelligence Dashboard screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>SkyCast — Weather Intelligence Dashboard</h3>
+                            <p class="project__description">A responsive weather dashboard with city search and weather information in a clear, user-friendly interface.</p>
+                            <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Weather API</span></div>
+                            <div class="project-links"><a href="https://skycast30.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/nawrin30/Skycast" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="4">
+                        <div class="project-img-container"><img src="./Images/AI-skillforge.png" alt="SkillForge AI screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>SkillForge AI</h3>
+                            <p class="project__description">An AI-focused career and skill development platform to help users explore skills and learning paths.</p>
+                            <div class="tech-stack"><span>AI</span><span>JavaScript</span><span>Web Development</span></div>
+                            <div class="project-links"><a href="https://nawrin30.github.io/SkillForge-Ai/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/nawrin30/SkillForge-Ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="5">
+                        <div class="project-img-container"><img src="Images/bazardor.png" alt="BazarDor screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>BazarDor</h3>
+                            <p class="project__description">An online shopping project designed to make product discovery and browsing straightforward.</p>
+                            <div class="tech-stack"><span>Django</span><span>Python</span><span>JavaScript</span></div>
+                            <div class="project-links"><a href="https://bazardor21.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/nawrin30/BazarDor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+
+                    
+<!-- LIFE-OS Project -->
+<article class="project-card scroll-reveal project-page-item"
+         data-project-index="7">
+
+    <div class="project-img-container">
+        <img
+            src="Images/life-os.png"
+            alt="LIFE-OS Project Screenshot"
+            class="project-image"
+            loading="lazy"
+        >
+    </div>
+
+    <div class="project-details">
+        <h3>LIFE-OS — Personal Life Management System</h3>
+
+        <p class="project__description">
+            A personal life management platform designed to organize
+            daily activities, manage tasks, and improve productivity.
+        </p>
+
+        <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+
+        <div class="project-links">
+            <a
+                href="https://nawrin30.github.io/LIFE-OS/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-sm btn-primary"
+            >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Live Demo
+            </a>
+
+            <a
+                href="https://github.com/nawrin30/LIFE-OS"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-sm btn-outline"
+            >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </div>
+</article>
+
+
+                    <article class="project-card scroll-reveal project-page-item" data-project-index="6">
+                        <div class="project-img-container"><img src="./Images/mindful-breathing-hub.png" alt="Mindful Breathing Hub screenshot" class="project-img" loading="lazy"></div>
+                        <div class="project-details">
+                            <h3>Mindful Breathing Hub</h3>
+                            <p class="project__description">A wellness web app focused on guided breathing and mindfulness with a calming user experience.</p>
+                            <div class="tech-stack"><span>JavaScript</span><span>CSS</span><span>Web App</span></div>
+                            <div class="project-links"><a href="https://github.com/nawrin30/mindful-breathing-hub" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> GitHub</a></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-more-wrap">
+                    <button type="button" class="btn btn-primary projects-more-btn" id="projectsMoreBtn" aria-controls="projectsGrid">See More <i class="fa-solid fa-chevron-down"></i></button>
+                    <p class="projects-count" id="projectsCount" aria-live="polite">Showing 3 of 7 projects</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="certificates" class="certificates section-padding">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Certificates & <span>Training</span>
+                    </h2>
+
+                    <p>
+                        Continuous learning and achievements
+                    </p>
+
+                </div>
+
+
+                <div class="certificates-grid">
+
+
+                 
+
+                    <div class="certificate-card scroll-reveal">
+
+                        <div class="cert-img-container">
+
+                            <img src="./Images/Html certificate.png"
+                                alt="HTML Certificate"
+                                onerror="this.onerror=null; this.src='Html certificate.png';">
+
+                        </div>
+
+
+                        <div class="cert-content">
+
+                            <h4>
+                                Responsive Web Design & Development
+                            </h4>
+
+                            <p class="issuer">
+
+                                <i class="fa-solid fa-award"></i>
+
+                                Online Learning Platform
+
+                            </p>
+
+                            <p class="date">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Completion Date: 2025
+
+                            </p>
+
+
+                            <a href="./Images/Html certificate.png"
+                                target="_blank"
+                                class="btn">
+
+                                View Certificate
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                 
+
+                    <div class="certificate-card scroll-reveal">
+
+                        <div class="cert-img-container">
+
+                            <img src="./Images/Cyber_security certificate.png"
+                                alt="Cyber Security Certificate"
+                                onerror="this.onerror=null; this.src='Cyber_security certificate.png';">
+
+                        </div>
+
+
+                        <div class="cert-content">
+
+                            <h4>
+                                Cyber Security
+                            </h4>
+
+                            <p class="issuer">
+
+                                <i class="fa-solid fa-award"></i>
+
+                                Professional Training Academy
+
+                            </p>
+
+                            <p class="date">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Completion Date: 2025
+
+                            </p>
+
+
+                            <a href="./Images/Cyber_security certificate.png"
+                                target="_blank"
+                                class="btn">
+
+                                View Certificate
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                
+
+                    <div class="certificate-card scroll-reveal">
+
+                        <div class="cert-img-container">
+
+                            <img src="./Images/prompt engineering.png"
+                                alt="Prompt Engineering Certificate"
+                                onerror="this.onerror=null; this.src='prompt engineering.png';">
+
+                        </div>
+
+
+                        <div class="cert-content">
+
+                            <h4>
+                                Prompt Engineering
+                            </h4>
+
+                            <p class="issuer">
+
+                                <i class="fa-solid fa-award"></i>
+
+                                Grameenphone
+
+                            </p>
+
+                            <p class="date">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Completion Date: 2026
+
+                            </p>
+
+
+                            <a href="./Images/prompt engineering.png"
+                                target="_blank"
+                                class="btn">
+
+                                View Certificate
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                  
+
+                    <div class="certificate-card scroll-reveal">
+
+                        <div class="cert-img-container">
+
+                            <img src="./Images/AI_Certificate.png"
+                                alt="Generative AI Certificate"
+                                onerror="this.onerror=null; this.src='AI_Certificate.png';">
+
+                        </div>
+
+
+                        <div class="cert-content">
+
+                            <h4>
+                                Generative AI
+                            </h4>
+
+                            <p class="issuer">
+
+                                <i class="fa-solid fa-award"></i>
+
+                                Developer Workshop
+
+                            </p>
+
+                            <p class="date">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Completion Date: 2026
+
+                            </p>
+
+
+                            <a href="./Images/AI_Certificate.png"
+                                target="_blank"
+                                class="btn">
+
+                                View Certificate
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="education" class="education section-padding">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Education <span>Timeline</span>
+                    </h2>
+
+                    <p>
+                        My academic history
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                   
+
+                    <div class="timeline-item left scroll-reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Present — 7th Semester Running
+                            </span>
+
+
+                            <h3>
+                                B.Sc. in Software Engineering
+                            </h3>
+
+
+                            <h4>
+                                Daffodil International University
+                            </h4>
+
+
+                            <p class="cgpa">
+
+                                Current CGPA:
+                                <strong>3.34</strong>
+
+                            </p>
+
+
+                            <p>
+
+                                Developing core expertise in data structures,
+                                algorithms, object-oriented programming,
+                                software architecture, web development,
+                                and software engineering.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                 
+
+                    <div class="timeline-item right scroll-reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Completed
+                            </span>
+
+
+                            <h3>
+                                Higher Secondary Certificate (HSC)
+                            </h3>
+
+
+                            <h4>
+                                Bangladesh Noubahini College, Chittagong
+                            </h4>
+
+
+                            <p>
+
+                                Focused on Science group, developing
+                                analytical problem-solving skills and
+                                mathematical foundation.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                  
+
+                    <div class="timeline-item left scroll-reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">
+                                Completed
+                            </span>
+
+
+                            <h3>
+                                Secondary School Certificate (SSC)
+                            </h3>
+
+
+                            <h4>
+                                Bangladesh Noubahini School & College,
+                                Chittagong
+                            </h4>
+
+
+                            <p>
+
+                                Built fundamental knowledge in Science
+                                and ICT while developing strong academic
+                                and problem-solving skills.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="contact" class="contact section-padding">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <h2>
+                        Get In <span>Touch</span>
+                    </h2>
+
+                    <p>
+                        Feel free to contact me for opportunities or inquiries
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+
+                    <div class="contact-info scroll-reveal">
+
+                        <h3>
+                            Contact Information
+                        </h3>
+
+
+                        <p>
+
+                            I am a Software Engineering student passionate
+                            about web development, software engineering,
+                            and problem solving. I am currently interested
+                            in internship opportunities and collaborative
+                            projects where I can apply and improve my skills.
+
+                        </p>
+
+
+
+                       
+
+                        <div class="info-item">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <div>
+
+                                <h5>Email</h5>
+
+                                <a href="mailto:nawrintarannum30@gmail.com">
+                                    nawrintarannum30@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                       
+
+                        <div class="info-item">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <div>
+
+                                <h5>Phone</h5>
+
+                                <a href="tel:01788338781">
+                                    01788338781
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                      
+
+                        <div class="info-item">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+
+                                <h5>Location</h5>
+
+                                <p>
+                                    Ashulia, Dhaka, Bangladesh
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                       
+
+                        <div class="info-item">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                            <div>
+
+                                <h5>LinkedIn</h5>
+
+                                <a href="https://www.linkedin.com/in/nawrin-tarannum"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    linkedin.com/in/nawrin-tarannum
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                      
+
+                        <div class="info-item">
+
+                            <i class="fa-brands fa-github"></i>
+
+                            <div>
+
+                                <h5>GitHub</h5>
+
+                                <a href="https://github.com/nawrin30"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+
+                                    github.com/nawrin30
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    
+                        <div class="quick-social-links" aria-label="Social profiles">
+                            <a href="https://www.facebook.com/share/19nMGYV6dV/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+                            <a href="https://www.instagram.com/tarannumnawrin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                            <a href="https://wa.me/8801788338781" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+                        </div>
+
+</div>
+
+
+
+                 
+
+                    <div class="contact-form-wrapper scroll-reveal">
+
+                        <form id="contact-form" novalidate>
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required>
+
+                                <span class="error-msg"
+                                    id="name-error">
+                                </span>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required>
+
+                                <span class="error-msg"
+                                    id="email-error">
+                                </span>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required>
+
+                                <span class="error-msg"
+                                    id="subject-error">
+                                </span>
+
+                            </div>
+
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Write your message here..."
+                                    required></textarea>
+
+                                <span class="error-msg"
+                                    id="message-error">
+                                </span>
+
+                            </div>
+
+
+
+                            <button type="submit"
+                                class="btn btn-primary btn-full">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Send Message
+
+                            </button>
+
+
+                            <div id="form-status"
+                                class="form-status">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-info">
+
+                <h3>
+                    Nawrin Tarannum
+                </h3>
+
+                <p>
+                    Software Engineering Student | Web Developer
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-socials">
+
+                <a href="https://www.linkedin.com/in/nawrin-tarannum"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="https://github.com/nawrin30"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="mailto:nawrintarannum30@gmail.com"
+                    aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-bottom">
+
+                <p>
+
+                    &copy;
+
+                    <span id="current-year"></span>
+
+                    Nawrin Tarannum.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <a class="quick-whatsapp" href="https://wa.me/8801788338781" target="_blank" rel="noopener noreferrer" aria-label="Quick contact on WhatsApp" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i><span>Quick Contact</span>
+    </a>
+
+    <button id="back-to-top"
+        aria-label="Back to Top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
